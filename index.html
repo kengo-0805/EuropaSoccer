@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="FY21のシーズナブルコーヒーを紹介します．"
+    />
+    <title>coffeeFY21</title>
+    <!-- リセットCSS -->
+    <link href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <!-- Safariだとファビコンが表示されない -->
+    <link href="images/logo.png" rel="icon" type="image/png" />
+  </head>
+  <body>
+    <header class="page-header wrapper">
+      <h1>
+        <a href="index.html"><img class="logo" src="images/logo.png" /></a>
+      </h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="premiaLeague.html">PL</a></li>
+          <li><a href="laliga.html">LaLiga</a></li>
+          <li><a href="cl.html">CL</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <div class="intro wrapper">
+      <h2 class="page-title">今週の注目試合</h2>
+      <p>ここに注目度の高い試合などを載せたい</p>
+    </div>
+
+    <div>
+      <h1>jQueryライブラリの読み込みテスト</h1>
+
+    </div>
+    
+
+
+    <footer class="page-footer wrapper">
+      <div class="wrapper">
+        <p><small>&copy; 2021 Horii Kengo</small></p>
+      </div>
+    </footer>
+     <!-- Example Map Above  -->
+     <script src="js/jquery.vmap.js"></script>
+     <script src="js/jquery.vmap.europe.js"></script>
+      
+     <script>
+     jQuery('#vmap').vectorMap({
+         map: 'europe_en',
+         backgroundColor: null,
+         color: '#273c75',
+         hoverColor: '#999999',
+         enableZoom: false,
+         showTooltip: false
+     });
+     </script>
+      
+     <div id="vmap" style="width: 600px; height: 400px;"></div>
+    <!-- <script>
+      alert(123);
+    </script> -->
+  </body>
+</html>
